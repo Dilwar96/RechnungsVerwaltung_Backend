@@ -34,7 +34,6 @@ build/
 
 ### Sensitive Configuration ###
 src/main/resources/application.properties
-src/main/resources/application-prod.properties
 *.env
 .env
 .env.local
