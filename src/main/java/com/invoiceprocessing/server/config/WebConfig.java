@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**") // Erlaubt alle Endpunkte
                 .allowedOrigins(
                     "http://localhost:5173",
-                    "https://rechnungsverwaltungfrontend.netlify.app"
+                    "https://rechnugsverwahlungfrontend.netlify.app"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
