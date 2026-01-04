@@ -10,8 +10,12 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Erlaubt alle Endpunkte
-                .allowedOrigins("http://localhost:5173") // Dein Frontend
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Wichtig: DELETE erlauben
-                .allowedHeaders("*");
+                .allowedOrigins(
+                    "http://localhost:5173",
+                    "https://rechnungsverwaltungfrontend.netlify.app"
+                )
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }
